@@ -88,16 +88,6 @@ hr{border: 3px solid var(--gray-color);}
 .emcont p{display:block;padding:90px 0;}
 .emcont p img{max-width:100%;}
 
-/* 대회개요 */
-
-.summary {position: relative; margin: 0 auto; width: 100%; height: 653px; display: contents; }
-.summary dl{padding:0px; margin:0px; color:#222; float: left; width: 47%; margin: 0px 1.5% 25px; font-family: 'NanumSquare', sans-serif !important; }
-.summary dl dt{display: block; width: 10%; box-sizing: border-box; vertical-align: top; margin: 0px; text-align: center; font-size: 17px;
- font-weight: bold; line-height: 125%; padding: 10px; background-color: #074fa0; border-radius: 5px; color: #fff;}
-.summary dl dd{display: inline-block; width: 93%; vertical-align: top; font-size: 18px; line-height: 160%; text-align: left; padding: 20px; margin: 0px;
- background-color: whitesmoke; border-radius: 4px;  position: relative; box-shadow: 2px 2px 6px #c5c5c5;}
-
-
 /* icg소개 */
 
 a.link{background:url("../../../../images/user/main/sub/sub1/icg_link.png") no-repeat; 
@@ -123,14 +113,6 @@ ul.intro_icon li p img{width: 30%; height: auto;}
 .intro_con .con_2 .intro_text > p{line-height: 250%;}
 h2#intro_b{font-size: 20px; text-align: center; clear: both; line-height: 160%;padding: 57px;letter-spacing: 3px; position: relative; color: #545454;top: 118px;}
 
-
-/* 대회장인사 */
-.content_in .greeting_top img:nth-of-type(1){width: 33%; height: auto; margin-left: 25px; box-shadow: -25px -25px 0px #feb415; border-radius: 20px;}
-.content_in .greeting_top img:nth-of-type(2){position: relative; width: 62%;  left: -20px;  z-index: -1; }
-.content_in .greeting_top { margin-bottom: 50px;}
-.content_in .greeting_bottom p:nth-of-type(1){padding: 43px; font-size: 22px; font-weight: 200; line-height: 212%; word-break: keep-all;} 
-.content_in .greeting_bottom p:nth-of-type(2){font-size: 25px; text-align: center; margin: 50px; }
-
  /* icg 2012 */
  .subwrap3{background:url("../../../../images/user/main/sub/sub1/icg_bg.png") bottom no-repeat; z-index: -1; background-size: 72%; background-position: 52% 22%;}
  .subwrap3 .content_in > p{text-align: center;}
@@ -145,32 +127,6 @@ h2#intro_b{font-size: 20px; text-align: center; clear: both; line-height: 160%;p
  .subwrap3 .content_in .text_bottom dl dt dd{font-size: 16px; font-weight: 100;}
  .subwrap3 .content_in .text_bottom dl p{text-indent: 6.3em;}
 
-
-    /* contact us */
- .subwrap4 .content_in .map {border: 6px solid #c8c6c6;}
- .subwrap4 .content_in img {max-width: 100%;}
- .subwrap4 .content_in .contact_tit {color: #ff9b00; font-size: 2em; font-weight: bold; text-align: center; margin: 60px 0;}
- .subwrap4 .content_in .loc_wrap {overflow: hidden;}
- .subwrap4 .content_in .c_wrap .loc_wrap .loc_cont {background: #fbcb82; width: 49%; height: 100px; float: left; border-radius: 10px;text-align: center; margin-right: 20px; line-height: 100px;}
- .subwrap4 .content_in .c_wrap .loc_wrap .loc_cont:last-child {margin-right: 0;}
- .subwrap4 .content_in .c_wrap .loc_wrap .loc_cont > span {top: 0; font-size: 1.2em; vertical-align: super; font-weight: bold; color: #464646; margin-left: 30px;}
-
-.c_wrap .loc_table {margin: 80px 0;}
-.c_wrap .loc_table ul li {padding: 20px 40px; overflow: hidden; border-top: 4px solid #d2d2d2; border-bottom: 4px solid #d2d2d2; }
-.c_wrap .loc_table ul li:last-child {border-top: 0;}
-.c_wrap .loc_table .t_icon {float: left; display: block; background: #e0e0e0; width: 150px; height: 150px; top: 0; line-height: 85px; text-align: center; border-radius: 50%;}
-.c_wrap .loc_table dl {float: left; margin: 15px 0 0 0; padding: 20px;}
-.c_wrap .loc_table dl .t_tit {color: #499729; font-weight: bold; font-size: 1.3em; margin-bottom:20px;}
-.c_wrap .loc_table dl dd {display: inline-block; line-height: 2.5; font-weight: bold; font-size: 1.2em; color: #575857; margin-right: 75px;}
-.c_wrap .loc_table dl dd > i {margin-right: 10px;}
-   
-/* 뉴스 */
-.search_wrap {width: 70%; margin: 0 auto 30px; box-sizing: border-box; display: block; overflow: hidden;}
-.search_wrap select {height: 50px; border: 1px solid #d6d6d6; padding: 0 10px; font-size: 16px;}
-.search_wrap .search_input {position: relative; float: right; box-sizing: border-box; padding-left: 20px;}
-.search_wrap .search_input .search_txt {width: 100%; height: 50px; border: 1px solid #d6d6d6; box-sizing: border-box; padding: 0 60px 0 10px; font-size: 16px;}
-.search_wrap .search_input .search_btn {position: absolute; cursor:pointer; top: 0; right: 0; border: none; background: #e66a00; width: 50px; height: 50px;}
-.search_wrap .search_input .search_btn i {font-size: 24px; color: #ffffff;}
 
 /* 뉴스 - 게시판 리스트 */
 .board_list {margin-top: 60px; display: block; overflow: hidden;}
@@ -465,33 +421,6 @@ span.d-icon {background:url(../../../../images/user/main/sub6/daegu-icon.png) no
     ul.intro_icon li{float:left; padding: 7% 7%; transition: all 0.2s;}
     ul.intro_icon li p{text-align: center; padding-bottom: 20px; font-size: 17px; line-height: 160%;}
     ul.intro_icon li p img{width: 72%; height: auto;} 
-
-
-	/* 경기일정 */
-	.schedule_list li {width: 22%;}
-	.schedule_list .s_tit {font-size: 28px;}
-	
-	/* 대구체육 */
-	.daeguWrap .section1Wrap ul li h1 { font-size: 30px;  margin-bottom:50px; }
-    .daeguWrap .section1Wrap ul li h1 span {  font-size: 143px;  letter-spacing: -8px; }
-    .daeguWrap .section1Wrap ul li p { font-size: 17px; line-height: 1.9; }
-    .daeguWrap .section1Wrap {  height:390px; }
-    .daeguWrap .section1Wrap .arrows {  margin-top:-43px; }
-    .daeguWrap .section1Wrap .arrows img { width:30px; }
-    .daeguWrap .section2Wrap {  border-top:30px solid #f6f6f6; padding-top:70px; height: auto; padding-bottom:60px; }
-    .daeguWrap .section2Wrap:before { top:0; }
-    .daeguWrap .section2Wrap ul { width: 460px; height: 300px; }	
-    
-    /* 일반현황 */
-	.summary {position: relative; margin: 0 auto; width: 100%; height: 653px; display: contents; }
-	.summary dl{padding:0px; margin:0px; color:#222; float: left; width: 90%; margin: 0px 1.5% 25px; }
-	.summary dl dt{display: block; width: 10%; box-sizing: border-box; vertical-align: top; margin: 0px; text-align: center; font-size: 16px;
-	 font-weight: bold; line-height: 125%; padding: 10px; background-color: #074fa0; border-radius: 5px; color: #fff;}
-	.summary dl dd{display: inline-block; width: 98%; vertical-align: top; font-size: 17px; line-height: 160%; text-align: left; padding: 12px; margin: 0px;
-	 background-color: whitesmoke; border-radius: 4px; z-index: -1; position: relative; box-shadow: 2px 2px 6px #c5c5c5;}
-	
-	/* 게시판 */
-	.img_list .list_item {float: left; width: 45%; width: calc(100% / 2 - 28px);}
 }
 
 @media screen and (max-width:767px) {
