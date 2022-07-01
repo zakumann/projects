@@ -1,5 +1,5 @@
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=859d5827dea74945a8d9243df81edcf3"></script>
-
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -467,15 +467,15 @@
 		</div>
 	</div>
 </div>
+
 <div id="map" style="width:500px;height:400px;"></div>
-
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	2a9b30b46bd1d9db2c4bc7ea006f62a6"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2a9b30b46bd1d9db2c4bc7ea006f62a6"></script>
 <script>
+
 	// 카카오 지도 api
 	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 	var options = { //지도를 생성할 때 필요한 기본 옵션
-		center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+		center: new kakao.maps.LatLng(35.871691843254716, 128.62496478375644), //지도의 중심좌표.
 		level: 3 //지도의 레벨(확대, 축소 정도)
 	};
 
@@ -503,6 +503,28 @@
 
 	// 마커가 지도 위에 표시되도록 설정합니다
 	marker.setMap(map);
+
+
+	// 애니메이션
+	// let ecoceImg = document.querySelector('.ecoce-img');
+	// let fadeIn = document.querySelectorAll('#fadeInRight');
+	// let indexKakaoMap = document.querySelector('.indexKakaoMap');
+
+	// window.addEventListener("scroll", function() {
+	// 	let value = window.scrollY;
+
+	// 	if(value > 1900 && value < 3600) {
+	// 		ecoceImg.style.animation = "fade-in-left 1s ease-in forwards";
+	// 		indexKakaoMap.style.animation = "fade-in-left 1s ease-in forwards";
+	// 		for(const fadeInRight of fadeIn) {
+	// 			fadeInRight.style.animation = "fade-in-right 1s ease-in forwards";
+	// 		}
+	// 	}
+	// });
+	// document.querySelectorAll('.button').forEach(button => 
+	// 	button.innerHTML = '<div><span>' + 
+		// 	button.textContent.trim().split('').join('</span><span>') + 
+			// 	'</span></div>');
 
 			
 			// 아이콘 8개
@@ -545,6 +567,57 @@
 				
 				window.scrollTo(0, window.pageYOffset + 1);
 				window.scrollTo(0, window.pageYOffset - 1);
+
+				
+				// if (document.querySelectorAll('.customer_list[style="display:none;"]').length == 0) {
+				// 	load.style.display = "none";
+				// }
 			});
 		});
 	}
+
+
+	// 아이콘 4개
+	if (window.matchMedia("screen and (max-width: 940px)").matches) {
+		$(function () {
+			$(".customer_list").hide();
+			var list = document.getElementsByClassName('customer_list');
+			var hiddenArray = [];
+			var openArray = [];
+			$(".customer_list").slice(0, 12).show();
+			for (var i = 0; i < list.length; i++) {
+				if (list[i].style.display == "none") {
+					hiddenArray.push(list[i]);
+				} else {
+					openArray.push(list[i]);
+				}
+			}
+			// 보여진 아이콘
+			var second = 0
+			for (var i = 0; i < openArray.length; i++) {
+				second = second + 0.1
+				openArray[i].setAttribute('data-wow-delay', second + 's');
+			}
+			//숨겨진 아이콘
+			var hSecond = 0;
+			$(".load").click(function (e) {
+				e.preventDefault();
+				for (var i = 0; i < hiddenArray.length; i++) {
+					hSecond = hSecond + 0.1;
+					hiddenArray[i].setAttribute('data-wow-delay', hSecond + 's');
+					hiddenArray[i].style.display = 'block';
+					if ($(".customer_list:hidden").length == 0) {
+						$(".load").hide();
+					}
+				};
+			});
+			window.scrollTo(0, window.pageYOffset + 1);
+			window.scrollTo(0, window.pageYOffset - 1);
+		})
+	}
+	function preventClick(e){
+		e.preventDefault()
+	}
+</script>
+</body>
+</html>
